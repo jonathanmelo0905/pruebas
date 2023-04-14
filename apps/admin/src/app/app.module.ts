@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { UiModule } from '@ventas-habitat/ui';
-import { Prueba2Component } from './prueba2/prueba2.component';
-// import { AppComponent } from "../../../admin/src/app/app.component"
+
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, Prueba2Component],
+  declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-    UiModule,
-    RouterLink
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [Prueba2Component],
+  exports: [AppComponent],
 })
 export class AppModule {}
