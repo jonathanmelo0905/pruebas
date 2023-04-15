@@ -4,7 +4,7 @@ import { HeaderComponent } from "@ventas-habitat/ui";
 
 export const appRoutes: Route[] = [
     {
-      path: 'inicio',
+      path: '',
       component: Prueba2Component,
     },
     {
